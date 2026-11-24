@@ -1,0 +1,40 @@
+<?php
+
+return [
+    'accepted' => 'لازم توافق على :attribute.',
+    'after' => 'لازم يكون :attribute بعد :date.',
+    'confirmed' => 'تأكيد :attribute مش مطابق.',
+    'email' => 'اكتبي :attribute بصيغة بريد إلكتروني صحيحة.',
+    'exists' => 'القيمة المختارة لـ :attribute غير صحيحة.',
+    'file' => ':attribute لازم يكون ملف.',
+    'in' => 'القيمة المختارة لـ :attribute غير صحيحة.',
+    'integer' => ':attribute لازم يكون رقم صحيح.',
+    'max' => [
+        'numeric' => 'قيمة :attribute لازم تكون أقل من :max.',
+        'file' => 'حجم :attribute لازم يكون أقل من :max كيلوبايت.',
+        'string' => ':attribute لازم مايزدش عن :max حرف.',
+        'array' => ':attribute لازم مايزدش عن :max عنصر.',
+    ],
+    'min' => [
+        'numeric' => 'قيمة :attribute لازم تكون على الأقل :min.',
+        'file' => 'حجم :attribute لازم يكون على الأقل :min كيلوبايت.',
+        'string' => ':attribute لازم يكون :min حروف على الأقل.',
+        'array' => ':attribute لازم يحتوي على :min عنصر على الأقل.',
+    ],
+    'mimes' => ':attribute لازم يكون ملف من نوع: :values.',
+    'numeric' => ':attribute لازم يكون رقم.',
+    'regex' => 'صيغة :attribute غير صحيحة.',
+    'required' => ':attribute مطلوب.',
+    'required_if' => ':attribute مطلوب في الحالة دي.',
+    'string' => ':attribute لازم يكون نص.',
+    'unique' => ':attribute مستخدم قبل كده.',
+    'uploaded' => 'تعذر رفع :attribute.',
+    'attributes' => [
+        'name' => 'الاسم الثلاثي', 'email' => 'البريد الإلكتروني', 'phone' => 'رقم الموبايل',
+        'age' => 'السن', 'country' => 'البلد', 'password' => 'كلمة المرور',
+        'specialty' => 'التخصص', 'bio' => 'النبذة المهنية', 'clinic_name' => 'اسم العيادة',
+        'address' => 'العنوان', 'consultation_fee' => 'سعر الكشف', 'credential' => 'المستند المهني',
+        'slot_id' => 'المعاد', 'attendee_name' => 'اسم المريض', 'attendee_age' => 'سن المريض',
+        'attendee_country' => 'بلد المريض', 'reason' => 'سبب الزيارة',
+    ],
+];

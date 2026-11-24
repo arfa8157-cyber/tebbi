@@ -1,0 +1,5 @@
+@extends('layouts.app')
+@section('title', 'تأكيد البريد الإلكتروني — طبي')
+@section('content')
+<section class="auth-page container"><div class="auth-aside"><span class="brand-mark large-mark">ط</span><span class="eyebrow">تأكيد البريد</span><h1>خطوة أمان مهمة</h1><p>أكد بريدك الإلكتروني عشان تقدر تستخدم الحجز ولوحات الحساب.</p></div><div class="auth-form-card"><span class="eyebrow">باقي خطوة واحدة</span><h2>راجع بريدك الإلكتروني</h2><p class="muted">بعتنالك رابط تأكيد. لو مش ظاهر، راجع مجلد الرسائل غير المرغوب فيها أو اطلب رابط جديد.</p>@if(config('mail.default') === 'log')<div class="integration-note">إعداد البريد الحالي للتطوير فقط؛ الرسائل مش بتوصل لصندوق بريدك. اربطي SMTP في ملف البيئة لتفعيل التأكيد واستعادة كلمة المرور.</div>@endif @if(session('success'))<div class="notice success">{{ session('success') }}</div>@endif<form method="POST" action="{{ route('verification.send') }}">@csrf<button class="button button-primary full">إعادة إرسال رابط التأكيد</button></form><form method="POST" action="{{ route('logout') }}" class="verify-logout">@csrf<button class="text-button">تسجيل الخروج</button></form></div></section>
+@endsection
